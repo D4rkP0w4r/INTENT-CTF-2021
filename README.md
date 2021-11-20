@@ -2,11 +2,11 @@
 * Category: Web 
 * Name: Careers
 * Level: None 
-* Technique: `ZIP Symlink Vulnerability
+* Technique: `ZIP Symlink Vulnerability`
 * Description: We got hacked,
 We're trying to indentify the ROOT cause.
 If you are a l33t h4x0r, please upload your resume.
-`
+
 ## Solution
 * Overview challenge provided a main page and `careers.php` page  
 ![Main function](Careers/1.PNG)
