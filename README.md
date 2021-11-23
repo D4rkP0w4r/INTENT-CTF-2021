@@ -128,7 +128,7 @@ I think i finished solve this challenge i used curl command for get flag but no 
 $ curl -k https://mass-notes.chal.intentsummit.org/avatar/6197afd9ccfc2f0f0fa4e9e5.png
 Error: ENOENT: no such file or directory, open '/app/avatars/default_1.png'
 ```
-* The error show try open file name `neptunian.png` and didn't found it. default path is /app/avatars so i need to get up two levels in path traversal.
+* The error show try open file name `default_1.png` and didn't found it. default path is /app/avatars so i need to get up two levels in path traversal.
 * I used Burp Suite catch a request and insert `../../flag` into `"avatar":"../../flag"` , server response new id 
 ![Main function](MassNotes/9.PNG)
 * I used curl again with new `id.png` and i have a flag ^_^
