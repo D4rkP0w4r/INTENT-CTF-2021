@@ -126,7 +126,7 @@ https://mass-notes.chal.intentsummit.org/note.html?note={"title":"hacked by d4rk
 I think i finished solve this challenge i used curl command for get flag but no it's error :))
 ```c
 $ curl -k https://mass-notes.chal.intentsummit.org/avatar/6197afd9ccfc2f0f0fa4e9e5.png
-Error: ENOENT: no such file or directory, open '/app/avatars/d4rkp0w4r.png'
+Error: ENOENT: no such file or directory, open '/app/avatars/default_1.png'
 ```
 * The error show try open file name `neptunian.png` and didn't found it. default path is /app/avatars so i need to get up two levels in path traversal.
 * I used Burp Suite catch a request and insert `../../flag` into `"avatar":"../../flag"` , server response new id 
